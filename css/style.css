@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+:root{
+    --Moderateviolet: hsl(263, 55%, 52%);
+    --Verydarkgrayishblue: hsl(217, 19%, 35%);
+    --Verydarkblackishblue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    --Lightgray: hsl(0, 0%, 81%);
+    --Lightgrayishblue: hsl(210, 46%, 95%);
+}
+body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: var(--Lightgrayishblue);
+}
+main{
+    display: grid;
+    max-width: 1100px;
+    grid-template-columns: repeat(4,25%);
+    grid-template-areas: "article1 article1 article2 article5"
+     "article3 article4 article4 article5"
+    ;  
+}
+@media (max-width :767px){
+    main{
+    grid-template-areas: "article1" "article2" "article3" "article4" "article5";
+    display: grid;
+    grid-template-columns: repeat(1,100%);   
+   }   
+}
+article{
+    padding: 1.8rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    margin: 1rem;
+    position: relative;
+}
+article .persone {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 500;
+}
+article .persone .pic img{
+    width: 40px;
+    border-radius: 50%;
+}
+article p {
+    line-height: 1.6;
+}
+article .pattern{
+  position: absolute;
+  opacity: 0.7;
+  top :0.5rem;
+  right: 4rem;
+}
+@media (max-width:767px){
+    article .pattern{
+        right: 1.5rem;
+    }
+}
+.article1{
+    grid-area: article1;
+    background-color: var(--Moderateviolet);
+}
+
+.article2{
+    grid-area: article2;
+    background-color: var(--Verydarkgrayishblue);
+}
+.article3{
+    grid-area: article3;
+    background-color: var(--White);
+}
+.article4{
+    grid-area: article4;
+    background-color: var(--Verydarkblackishblue);
+}
+.article5{
+    grid-area: article5;
+    background-color: var(--White);
+}
+.article4 .persone .pic img{
+    border: 2px solid var(--Moderateviolet);
+}
+.article1 .persone .info .name,
+.article2 .persone .info .name,
+.article4 .persone .info .name{
+    color: var(--Lightgrayishblue);
+}
+.article1 .persone .info .type,
+.article2 .persone .info .type,
+.article4 .persone .info .type{
+    color: var(--Lightgrayishblue);
+    opacity: 0.5;
+}
+.article1 .details ,
+ .article2 .details,
+.article4 .details {
+    color: var(--Lightgrayishblue);
+    z-index: 1;
+}
+.article1 .more ,
+ .article2 .more,
+.article4 .more {
+    color: var(--Lightgrayishblue);
+    opacity: 0.7;
+}
+.article3 .persone .info .name,
+.article5 .persone .info .name{
+    color: var(--Verydarkgrayishblue);
+}
+.article3 .persone .info .type,
+.article5 .persone .info .type{
+    color: var(--Verydarkblackishblue);
+    opacity: 0.5;
+}
+.article3 .details ,
+.article5 .details{
+    color: var(--Verydarkgrayishblue);
+}
+.article3 .more ,
+.article5 .more{
+    color: var(--Verydarkgrayishblue);
+    opacity: 0.7;
+}
+
