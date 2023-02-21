@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/jamel123a/FrontendMentor_Testimonials_grid_section)
+- Live Site URL: [Netlify](https://testimonial-grid-section-frontendment.netlify.app/)
 
 ## My process
 
@@ -54,6 +54,6 @@ i like this challenge
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Github - [Jamel Issaoui](https://github.com/jamel123a)
 
 
