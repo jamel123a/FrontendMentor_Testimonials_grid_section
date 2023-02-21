@@ -34,6 +34,14 @@ main{
      "article3 article4 article4 article5"
     ;  
 }
+
+@media (max-width :991px){
+    main{
+    grid-template-areas: "article1 article2" "article5 article5" "article3 article4";
+    display: grid;
+    grid-template-columns: repeat(2,50%);   
+   }   
+}
 @media (max-width :767px){
     main{
     grid-template-areas: "article1" "article2" "article3" "article4" "article5";
@@ -49,6 +57,11 @@ article{
     border-radius: 1rem;
     margin: 1rem;
     position: relative;
+    box-shadow: 0 0.125rem 0.9375rem 0.5rem rgba(0,0,0,0.1);
+    transition: 0.5s ease;
+}
+article:hover{
+    transform: scale(1.05);
 }
 article .persone {
     display: flex;
