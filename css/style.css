@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
-
+/* generel tag*/
 *{
     box-sizing: border-box;
     margin: 0;
@@ -34,7 +34,7 @@ main{
      "article3 article4 article4 article5"
     ;  
 }
-
+/* for table*/
 @media (max-width :991px){
     main{
     grid-template-areas: "article1 article2" "article5 article5" "article3 article4";
@@ -42,6 +42,7 @@ main{
     grid-template-columns: repeat(2,50%);   
    }   
 }
+/* for mobile */
 @media (max-width :767px){
     main{
     grid-template-areas: "article1" "article2" "article3" "article4" "article5";
@@ -57,7 +58,7 @@ article{
     border-radius: 1rem;
     margin: 1rem;
     position: relative;
-    box-shadow: 0 0.125rem 0.9375rem 0.5rem rgba(0,0,0,0.1);
+    box-shadow: 0 0.125rem 0.9375rem 0.5rem rgba(0,0,0,0.1);/* box shadow  */
     transition: 0.5s ease;
 }
 article:hover{
@@ -97,6 +98,9 @@ article .pattern{
     grid-area: article2;
     background-color: var(--Verydarkgrayishblue);
 }
+.article2:hover{
+    background-color: var(--Verydarkblackishblue);
+}
 .article3{
     grid-area: article3;
     background-color: var(--White);
@@ -104,6 +108,9 @@ article .pattern{
 .article4{
     grid-area: article4;
     background-color: var(--Verydarkblackishblue);
+}
+.article4:hover{
+    background-color: var(--Verydarkgrayishblue);
 }
 .article5{
     grid-area: article5;
